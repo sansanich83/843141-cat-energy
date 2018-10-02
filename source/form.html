@@ -17,12 +17,12 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Каталог продукции</a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--current">
           <a href="#">Подбор программы</a>
         </li>
       </ul>
@@ -31,12 +31,85 @@
 
   <main>
 
+    <form class="selection" action="https://echo.htmlacademy.ru" method="post">
 
+      <h2 class="selection__header">Подбор программы</h2>
+      <span class="selection__invite">Заполните анкету и мы подберем программу питания для вашего кота</span>
+      <div class="selection__bio bio">
+        <label class="bio__items" for="cat-name">Имя:*</label>
+        <input type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+        <label class="bio__items" for="cat-weight">Вес (кг):*</label>
+        <input type="text" id="cat-weight" name="cat-weight" placeholder="7">
+        <label class="bio__items" for="cat-age">Возраст (лет):</label>
+        <input type="text" id="cat-age" name="cat-age" placeholder="7">
+      </div>
+      <div class="selection__way way">
+        <label class="way__items" for="defating"></label>
+        <input type="radio" id="defating" name="trend" value="defat">Похудение
+        <label class="way__items" for="muscle"></label>
+        <input type="radio" id="muscle" name="trend" value="muscle">Набор массы
+        <label class="way__items" for="advice"></label>
+        <input type="radio" id="advice" name="trend" value="unknow">Не знаю (нужен ваш совет)
+      </div>
+      <div class="selection__cat-contacts cat-contacts">
+        <div class="selection-title">
+          <h3 class="cat-contacts__header selection-title__title">Контактные данные (владельца кота)</h3>
+          <div class="selection-title__divline"></div>
+        </div>
+        <label class="cat-contacts__item" for="email">E-mail:*</label>
+        <input type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
+        <div class="cat-contacts__item--decor"></div>
+        <label class="cat-contacts__item" for="cat-contacts">Телефон:*</label>
+        <input type="text" id="cat-contacts" name="cat-contacts" placeholder="8 (960) 900-60-90">
+        <div class="cat-contacts__item--decor"></div>
+      </div>
+      <div class="selection__comments">
+        <div class="selection-title">
+          <h3 class="selection-title__title">Комментарий</h3>
+          <div class="selection-title__divline"></div>
+        </div>
+        <textarea placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+      </div>
+      <div class="selection__more more">
+        <div class="selection-title">
+          <h3 class="selection-title__title">Дополнительно</h3>
+          <div class="selection-title__divline"></div>
+        </div>
+        <ul class="more__list additional-goods-list">
+          <li class="additional-goods-list__item additional-goods-checkbox">
+            <input class="additional-goods-checkbox__checkbox" id="sweet" name="sweet" type="checkbox" checked>
+            <label class="additional-goods-checkbox__label" for="sweet">Сахарозаменитель</label>
+          </li>
+          <li class="additional-goods-list__item additional-goods-checkbox">
+            <input class="additional-goods-checkbox__checkbox" id="water" name="water" type="checkbox">
+            <label class="additional-goods-checkbox__label" for="water">Питьевая вода</label>
+          </li>
+          <li class="additional-goods-list__item additional-goods-checkbox">
+            <input class="additional-goods-checkbox__checkbox" id="milk" name="milk" type="checkbox">
+            <label class="additional-goods-checkbox__label" for="milk">Молоко</label>
+          </li>
+          <li class="additional-goods-list__item additional-goods-checkbox">
+            <input class="additional-goods-checkbox__checkbox" id="vitamins" name="vitamins" type="checkbox">
+            <label class="additional-goods-checkbox__label" for="vitamins">Витамины</label>
+          </li>
+        </ul>
+        <button class="selection__submit" type="submit">Отправить заявку</button>
+        <p class="selection__note">* — Обязательные поля</p>
+      </div>
+
+    </form>
 
   </main>
 
   <footer class="page-footer">
 
+    <div class="page-footer__contacts contacts">
+      <b class="contacts__invite"> Приглашаем к сотрудничеству дилеров!
+      </b>
+      <span class="contacts__address">ул. Большая Конюшенная, д. 19/8
+        Санкт-Петербург</span>
+    </div>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe>
     <div class="cat-energy-title">
       <b class="cat-energy-title__cat">Cat</b>
       <span class="cat-energy-title__energy">Energy</span>
