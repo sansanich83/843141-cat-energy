@@ -1,9 +1,43 @@
 body {
-  background: wheat;
+  background: @main-color;
   font-family: 'Oswald', sans-serif;;
 }
-@button-color: #68b738;
+.auto-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+.link-decor-off {
+  text-decoration: none;
+  color: black;
+}
+.ul-decor-off {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.button-decor-off {
+  background-color: @main-color;
+  border: none;
+}
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.small-arial {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
 
+
+@button-color: #68b738;
+@main-color: #ffffff;
+@secondary-color:#f2f2f2;
+@border-color: #e6e6e6;
 
 @import "./achive.less";
 @import "./cat-energy-title.less";

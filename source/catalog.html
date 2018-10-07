@@ -4,31 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="50" height="50" alt="питание для котов Кэт энерджи">
+      <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="195" height="50" alt="питание для котов Кэт энерджи">
     </a>
-    <div class="page-header__header cat-energy-title">
-      <b class="page-header__cat cat-energy-title__cat cat-energy-title__cat--header">Cat</b>
-      <span class="page-header__energy cat-energy-title__energy cat-energy-title__energy--header">Energy</span>
-    </div>
+    <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a href="index.html">Главная</a>
-          </li>
           <li class="site-list__item site-list__item--current">
-            <a href="#">Каталог продукции</a>
+            <a class="site-list__a" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__a" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__a" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -186,28 +183,28 @@
 
       <h2 class="page-main__header-line">Дополнительные товары</h2>
       <div class="additional-catalog__item additional-card">
-          <b class="additional-card__title">Сахарозаменитель</b>
-          <span class="aadditional-card__value">1 упаковка (100 г)</span>
-          <span class="additional-card__price">100 Р.</span>
-          <a class="page-main__button" href="#">Заказать</a>
+        <b class="additional-card__title">Сахарозаменитель</b>
+        <span class="aadditional-card__value">1 упаковка (100 г)</span>
+        <span class="additional-card__price">100 Р.</span>
+        <a class="page-main__button" href="#">Заказать</a>
       </div>
       <div class="additional-catalog__item additional-card">
-          <b class="additional-card__title">Питьевая вода</b>
-          <span class="aadditional-card__value">5 литров</span>
-          <span class="additional-card__price">50 Р.</span>
-          <a class="page-main__button" href="#">Заказать</a>
+        <b class="additional-card__title">Питьевая вода</b>
+        <span class="aadditional-card__value">5 литров</span>
+        <span class="additional-card__price">50 Р.</span>
+        <a class="page-main__button" href="#">Заказать</a>
       </div>
       <div class="additional-catalog__item additional-card">
-          <b class="additional-card__title">Молоко</b>
-          <span class="aadditional-card__value">1 литр</span>
-          <span class="additional-card__price">100 Р.</span>
-          <a class="page-main__button" href="#">Заказать</a>
+        <b class="additional-card__title">Молоко</b>
+        <span class="aadditional-card__value">1 литр</span>
+        <span class="additional-card__price">100 Р.</span>
+        <a class="page-main__button" href="#">Заказать</a>
       </div>
       <div class="additional-catalog__item additional-card">
-          <b class="additional-card__title">Витамины</b>
-          <span class="aadditional-card__value">1 упаковка (30 г)</span>
-          <span class="additional-card__price">300 Р.</span>
-          <a class="page-main__button" href="#">Заказать</a>
+        <b class="additional-card__title">Витамины</b>
+        <span class="aadditional-card__value">1 упаковка (30 г)</span>
+        <span class="additional-card__price">300 Р.</span>
+        <a class="page-main__button" href="#">Заказать</a>
       </div>
       <div class="additional-catalog__promo promo">
         <img class="promo__img" src="" alt="подарок">
@@ -226,28 +223,33 @@
       <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </span>
     </div>
-    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
-    <div class="cat-energy-title">
-      <b class="cat-energy-title__cat cat-energy-title__cat--footer">Cat</b>
-      <span class="cat-energy-title__energy cat-energy-title__energy--footer">Energy</span>
+    <div class="page-footer__map">
+      <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     </div>
+    <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com"><img src="#" alt="Наша страница вконтакте"></a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com">
+            <img src="./img/icon-vk.svg" alt="Наша страница вконтакте">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com"><img src="#" alt="Наш канал в ютубе"></a>
+          <a class="social__link social__link--youtube" href="https://youtube.com">
+            <img src="./img/icon-insta.svg" alt="Наш канал в ютубе">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com"><img src="#" alt="Наша страница твиттере"></a>
+          <a class="social__link social__link--twitter" href="https://twitter.com">
+            <img src="./img/icon-fb.svg" alt="Наша страница твиттере">
+          </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__created html-academy">
       <span class="html-academy__name">HTML Academy</span>
       <a class="html-academy__link" href="https://html-academy.ru">
-        <img src="#" alt="html-academy__img">
+        <img src="./img/htmlacademy.svg" width="35" height="35" alt="html-academy__img">
       </a>
     </div>
 
