@@ -4,30 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="50" height="50" alt="питание для котов Кэт энерджи">
+      <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="195" height="50" alt="питание для котов Кэт энерджи">
     </a>
-    <div class="page-header__header cat-energy-title">
-      <b class="page-header__cat cat-energy-title__cat cat-energy-title__cat--header">Cat</b>
-      <span class="page-header__energy cat-energy-title__energy cat-energy-title__energy--header">Energy</span>
-    </div>
+    <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
           <li class="site-list__item site-list__item--current">
-            <a href="#">Подбор программы</a>
+            <a class="site-list__a" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__a" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__a" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,64 +39,78 @@
       <h2 class="page-main__section-header">Подбор программы</h2>
       <span class="selection__invite">Заполните анкету и мы подберем программу питания для вашего кота</span>
       <div class="selection__bio bio">
-        <label class="bio__items" for="cat-name">Имя:*</label>
-        <input class="bio__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-        <label class="bio__items" for="cat-weight">Вес (кг):*</label>
-        <input class="bio__input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
-        <label class="bio__items" for="cat-age">Возраст (лет):</label>
-        <input class="bio__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+        <div class="bio__items">
+          <label class="bio__label" for="cat-name">Имя:*</label>
+          <input class="bio__input form-text" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+        </div>
+        <div class="bio__items">
+          <label class="bio__label" for="cat-weight">Вес (кг):*</label>
+          <input class="bio__input form-text" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+        </div>
+        <div class="bio__items">
+          <label class="bio__label" for="cat-age">Возраст (лет):</label>
+          <input class="bio__input form-text" type="text" id="cat-age" name="cat-age" placeholder="7">
+        </div>
       </div>
       <div class="selection__way way">
-        <label class="way__items" for="defating"></label>
-        <input class="way__input" type="radio" id="defating" name="trend" value="defat">Похудение
-        <label class="way__items" for="muscle"></label>
-        <input class="way__input" type="radio" id="muscle" name="trend" value="muscle">Набор массы
-        <label class="way__items" for="advice"></label>
-        <input class="way__input" type="radio" id="advice" name="trend" value="unknow">Не знаю (нужен ваш совет)
+        <label class="way__items form-text" for="defating">
+          <input class="way__input" type="radio" id="defating" name="trend" value="defat">
+          Похудение
+        </label>
+        <label class="way__items form-text" for="muscle">
+          <input class="way__input" type="radio" id="muscle" name="trend" value="muscle">
+          Набор массы
+        </label>
+        <label class="way__items form-text" for="advice">
+          <input class="way__input" type="radio" id="advice" name="trend" value="unknow">
+          Не знаю (нужен ваш совет)
+        </label>
       </div>
       <div class="selection__cat-contacts cat-contacts">
         <div class="selection-title">
-          <h3 class="cat-contacts__header selection-title__title">Контактные данные (владельца кота)</h3>
-          <div class="selection-title__divline"></div>
+          <h3 class="cat-contacts__header selection-title__title page-main__header-line">Контактные данные (владельца
+            кота)</h3>
         </div>
-        <label class="cat-contacts__item" for="email">E-mail:*</label>
-        <input class="cat-contacts__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
-        <div class="cat-contacts__item cat-contacts__item--decor"></div>
-        <label class="cat-contacts__item" for="cat-contacts">Телефон:*</label>
-        <input class="cat-contacts__input" type="text" id="cat-contacts" name="cat-contacts" placeholder="8 (960) 900-60-90">
-        <div class="cat-contacts__item cat-contacts__item--decor"></div>
+        <div class="cat-contacts__item">
+          <label class="cat-contacts__label form-text" for="email">E-mail:*</label>
+          <input class="cat-contacts__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
+        </div>
+        <div class="cat-contacts__item">
+          <label class="cat-contacts__label form-text" for="cat-contacts">Телефон:*</label>
+          <input class="cat-contacts__input" type="text" id="cat-contacts" name="cat-contacts" placeholder="8 (960) 900-60-90">
+        </div>
       </div>
       <div class="selection__comments">
         <div class="selection-title">
-          <h3 class="selection-title__title">Комментарий</h3>
+          <h3 class="selection-title__title page-main__header-line">Комментарий</h3>
           <div class="selection-title__divline"></div>
         </div>
-        <textarea placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+        <textarea class="selection__comments-text form-text" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
       </div>
       <div class="selection__more more">
         <div class="selection-title">
-          <h3 class="selection-title__title">Дополнительно</h3>
+          <h3 class="selection-title__title page-main__header-line">Дополнительно</h3>
           <div class="selection-title__divline"></div>
         </div>
         <ul class="more__list additional-goods-list">
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="sweet" name="sweet" type="checkbox" checked>
-            <label class="additional-goods-checkbox__label" for="sweet">Сахарозаменитель</label>
+            <label class="additional-goods-checkbox__label form-text" for="sweet">Сахарозаменитель</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="water" name="water" type="checkbox">
-            <label class="additional-goods-checkbox__label" for="water">Питьевая вода</label>
+            <label class="additional-goods-checkbox__label form-text" for="water">Питьевая вода</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="milk" name="milk" type="checkbox">
-            <label class="additional-goods-checkbox__label" for="milk">Молоко</label>
+            <label class="additional-goods-checkbox__label form-text" for="milk">Молоко</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="vitamins" name="vitamins" type="checkbox">
-            <label class="additional-goods-checkbox__label" for="vitamins">Витамины</label>
+            <label class="additional-goods-checkbox__label form-text" for="vitamins">Витамины</label>
           </li>
         </ul>
-        <button class="selection__submit" type="submit">Отправить заявку</button>
+        <button class="selection__submit page-main__button" type="submit">Отправить заявку</button>
         <p class="selection__note">* — Обязательные поля</p>
       </div>
 
@@ -114,28 +126,33 @@
       <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </span>
     </div>
-    <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
-    <div class="cat-energy-title">
-      <b class="cat-energy-title__cat cat-energy-title__cat--footer">Cat</b>
-      <span class="cat-energy-title__energy cat-energy-title__energy--footer">Energy</span>
+    <div class="page-footer__map">
+      <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     </div>
+    <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com"><img src="#" alt="Наша страница вконтакте"></a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com">
+            <img src="./img/icon-vk.svg" alt="Наша страница вконтакте">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com"><img src="#" alt="Наш канал в ютубе"></a>
+          <a class="social__link social__link--youtube" href="https://youtube.com">
+            <img src="./img/icon-insta.svg" alt="Наш канал в ютубе">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com"><img src="#" alt="Наша страница твиттере"></a>
+          <a class="social__link social__link--twitter" href="https://twitter.com">
+            <img src="./img/icon-fb.svg" alt="Наша страница твиттере">
+          </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__created html-academy">
       <span class="html-academy__name">HTML Academy</span>
       <a class="html-academy__link" href="https://html-academy.ru">
-        <img src="#" alt="html-academy__img">
+        <img src="./img/htmlacademy.svg" width="35" height="35" alt="html-academy__img">
       </a>
     </div>
 

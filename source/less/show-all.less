@@ -1,0 +1,25 @@
+.show-all {
+  text-align: center;
+}
+
+.show-all__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-image: url("../img/icon-plus.svg");
+    .auto-margin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.show-all__text {
+  .smaller-arial;
+}
