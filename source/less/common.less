@@ -39,16 +39,17 @@ body {
   overflow: hidden;
 }
 
-.small-arial {
+.arial(@size;@line;@weight: 400) {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: @size;
+  line-height: @line;
+  font-weight: @weight;
 }
-
-.smaller-arial {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+.font(@size;@height;@weight;@up: uppercase) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-transform: @up;
 }
 
 .standard-padding {
