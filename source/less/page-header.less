@@ -1,11 +1,21 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  min-width: 320px;
   .auto-margin;
 }
 
 .page-header__logo {
   margin-right: auto;
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    min-width: 768px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

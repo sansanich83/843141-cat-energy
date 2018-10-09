@@ -1,5 +1,5 @@
 .page-main {
-  width: 320px;
+  min-width: 320px;
   .auto-margin;
 }
 
@@ -68,4 +68,10 @@
 
 .page-main__live-example {
   margin-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    min-width: 768px;
+  }
 }
