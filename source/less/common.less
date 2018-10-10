@@ -4,6 +4,7 @@
 @secondary-text-color: #444444;
 @border-color: #e6e6e6;
 @tablet-width: 768px;
+@tablet-padding: 30px;
 
 body {
   background: @main-color;
@@ -56,9 +57,9 @@ body {
   text-transform: @up;
 }
 
-.standard-padding {
-  padding-left: 20px;
-  padding-right: 20px;
+.standard-padding (@left-right:20px) {
+  padding-left: @left-right;
+  padding-right: @left-right;
 }
 
 .form-text {
