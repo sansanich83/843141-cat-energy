@@ -6,8 +6,13 @@
 }
 
 .page-header__logo {
-  margin-right: auto;
+  margin-right: 10%;
+  margin-left: 10%;
   padding-left: 20px;
+}
+
+.page-header__button {
+  margin-left: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,11 +26,12 @@
 
   .page-header {
     .standard-padding(@tablet-padding);
+    flex-wrap: nowrap;
   }
 
   .page-header__logo {
-    margin-right: auto;
-    padding-left: 10px;
+    margin-left: 1%;
     margin-top: 25px;
+    margin-right: 2%;
   }
 }
