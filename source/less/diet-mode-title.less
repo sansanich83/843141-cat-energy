@@ -1,29 +1,59 @@
-.diet-mode-title {
+.diet-mode {
   display: flex;
-  background-image: url("../img/circle.svg");
-  background-repeat: no-repeat;
-  background-position: 4px 50%;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  min-width: 240px;
-  min-height: 65px;
-  padding-top: 5px;
-  padding-left: 5px;
+  flex-wrap: wrap;
 }
 
-.diet-mode-title__header {
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-.diet-mode-title__img {
-  margin-right: 10px;
-  margin-left: -10px;
+.diet-mode-title {
+  background-color: @button-color;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
 }
 
 .diet-mode-title__img--muscle {
-  margin-left: -15px;
-  margin-right: 15px;
+  margin-left: -10px;
 }
+
+.diet-mode-title__header {
+  margin-left: 5%;
+  .font(24px;37px;400;uppercase);
+  margin-top: 10px;
+}
+
+.diet-mode__text {
+  .arial(14px;18px;400);
+}
+
+@media (min-width: @tablet-width) {
+
+  .diet-mode {
+    width: 100%;
+  }
+
+  .diet-mode-title {
+    width: 200px;
+    height: 200px;
+  }
+
+  .diet-mode-title__img {
+    width: 230px;
+    height: 190px;
+  }
+
+  .diet-mode-title__header {
+    margin-left: 0;
+    .font(36px;37px;400;uppercase);
+    margin-top: 10px;
+  }
+
+  .diet-mode__text {
+    .arial(16px;24px;400);
+    width: 380px;
+  }
+
+  .diet-mode__to-catalog {
+    .font(20px;20px;400;uppercase);
+  }
+
+}
+
