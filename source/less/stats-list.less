@@ -1,4 +1,34 @@
 .stats-list {
   margin-top: 30px;
   display: flex;
+  margin-bottom: 20px;
+}
+
+@media (min-width:@tablet-width) {
+  .stats-list {
+    width: 40%;
+    float: left;
+    margin-left: 4%;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .stats-list__wrapper2 {
+    width: 42%;
+    display:flex;
+    flex-direction: column;
+    padding-left: 8%;
+    background-color: @secondary-color;
+  }
+
+  .page-main__section-heade-wrapper {
+    background-color: @main-color;
+    padding-left: 20%;
+    margin-left: -20%;
+  }
+
+  .stats-list {
+    width: 400px;
+    margin-left: 0%;
+  }
 }

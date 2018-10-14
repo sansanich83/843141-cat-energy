@@ -35,4 +35,27 @@
     color:#222;
     flex-grow: 1;
   }
+
+  .site-list__item--current {
+    border-bottom: 1px solid @button-color;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .site-list__item:first-child {
+    margin-left: 50%;
+  }
+
+  .site-list__item {
+    flex-grow: 0;
+  }
+
+  .site-list__a {
+    color: @main-color;
+  }
+
+  .site-list__item--current {
+    border-bottom: 1px solid @main-color;
+  }
 }

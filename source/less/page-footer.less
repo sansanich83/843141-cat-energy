@@ -6,7 +6,6 @@
 }
 
 .page-footer__social-wrapper {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -22,7 +21,6 @@
 
 .page-footer__contacts {
   text-align: left;
-  padding: 20px;
 }
 
 .page-footer__logo {
@@ -31,5 +29,36 @@
 }
 
 .page-footer__social {
-  width: 320px;
+}
+
+@media(min-width:@tablet-width) {
+  .page-footer__map {
+    width: 768px;
+    height: 400px;
+    background-image:
+      url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 113px auto, 100% 100%;
+    background-position: 50% 50%;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .page-footer__social-wrapper {
+    display: flex;
+    margin-right: 4%;
+    width: 20%;
+    margin-left: 0%;
+    flex-grow: 1;
+  }
+
+  .page-footer__logo {
+    padding-left: 4%;
+    margin-right: 0;
+  }
 }

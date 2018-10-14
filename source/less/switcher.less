@@ -38,3 +38,52 @@
 .switcher__label--before {
   padding-right: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .switcher {
+    background-color: @secondary-color;
+    width: 600px;
+    position: relative;
+    z-index: 10;
+    margin-top: 0;
+  }
+
+  .switcher__bar-lever {
+    width: 5px;
+    height: 5px;
+    background: #68b738;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    position: relative;
+  }
+
+  .switcher__bar {
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin:0;
+    z-index: 10;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .switcher__bar-lever::after {
+    width: 428px;
+    height: 6px;
+    content: "";
+    right: -210px;
+    background-color: #cdcdcd;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .switcher__label--after {
+    margin-left: auto;
+  }
+
+}

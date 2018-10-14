@@ -1,5 +1,6 @@
 .contacts {
   display: flex;
+  padding: 20px;
 }
 
 .contacts__invite {
@@ -14,4 +15,25 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    background-color: @main-color;
+    min-height: 200px;
+    padding: 9%;
+    box-sizing: border-box;
+  }
+
+  .contacts__invite {
+    .font(20px;25px;400;uppercase);
+    width: 20%;
+  }
+
+  .contacts__address {
+    width: 25%;
+    margin-left: auto;
+    .arial(16px;20px;400);
+    text-align: right;
+  }
 }
