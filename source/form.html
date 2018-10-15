@@ -24,14 +24,14 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item ">
             <a class="site-list__a" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__a" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__a" href="form.html">Подбор программы</a>
+            <a class="site-list__a site-list__item--current" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -127,7 +127,7 @@
   <footer class="page-footer">
 
     <div class="page-footer__contacts contacts">
-      <b class="contacts__invite"> Приглашаем к сотрудничеству дилеров!
+      <b class="contacts__invite">Приглашаем к сотрудничеству дилеров!
       </b>
       <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </span>
@@ -135,33 +135,36 @@
     <div class="page-footer__map">
       <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     </div>
-    <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com">
-            <img src="./img/icon-vk.svg" alt="Наша страница вконтакте">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
+      <div class="page-footer__social-wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com">
+                <img src="./img/icon-vk.svg" alt="Наша страница вконтакте">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://youtube.com">
+                <img src="./img/icon-insta.svg" alt="Наш канал в ютубе">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">
+                <img src="./img/icon-fb.svg" alt="Наша страница твиттере">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__created html-academy">
+          <span class="html-academy__name">HTML Academy</span>
+          <a class="html-academy__link" href="https://html-academy.ru">
+            <img src="./img/htmlacademy.svg" width="35" height="35" alt="html-academy__img">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com">
-            <img src="./img/icon-insta.svg" alt="Наш канал в ютубе">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com">
-            <img src="./img/icon-fb.svg" alt="Наша страница твиттере">
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
-    <div class="page-footer__created html-academy">
-      <span class="html-academy__name">HTML Academy</span>
-      <a class="html-academy__link" href="https://html-academy.ru">
-        <img src="./img/htmlacademy.svg" width="35" height="35" alt="html-academy__img">
-      </a>
-    </div>
-
   </footer>
 
 </body>

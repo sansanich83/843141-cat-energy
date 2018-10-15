@@ -18,3 +18,66 @@
   line-height: 16px;
   text-transform: uppercase;
 }
+
+@media (min-width:@tablet-width) {
+
+  .additional-card {
+    width: 708px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    .auto-margin;
+    box-sizing: border-box;
+  }
+
+  .additional-card__title {
+    .font(20px;20px;400);
+    margin:0;
+    width: 60%;
+    padding-left: 40px;
+  }
+
+  .additional-card__properties {
+    .arial(16px;20px;400);
+    margin-left: auto;
+    width: 30%;
+    padding-right: 40px;
+  }
+
+  .additional-catalog__button {
+    .font(16px;20px;400);
+    width: 633px;
+    height: 42px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .additional-card {
+    width: 900px;
+    height: 75px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .additional-card__title {
+    .font(20px;20px;400);
+    margin:0;
+    width: 20%;
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .additional-card__properties {
+    .arial(16px;20px;400);
+    margin-left: auto;
+    width: 30%;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  .additional-catalog__button {
+    .font(16px;20px;400);
+    width: 245px;
+    height: 40px;
+  }
+}

@@ -26,12 +26,38 @@
   .product-card {
     width: 42%;
     background-color: @secondary-color;
-    margin: 4%;
+    margin: 18% 4% 0%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    height: 430px;
   }
 
   .product-card__img {
-    background-color: @secondary-color;
+    width: 250px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .product-card__header {
+    .font(20px;20px;400);
+    width: 130px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width:@desktop-width) {
+  .product-card {
+    width: 245px;
+    box-sizing: border-box;
+    margin: 9% 4% 0%;
+  }
+
+  .product-card__header {
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 }
