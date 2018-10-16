@@ -13,3 +13,34 @@
   border: 1px solid @border-color;
   padding-left: 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .bio {
+    width: 100%;
+    margin:0;
+    .font(20px;20px;400);
+  }
+
+  .bio__items {
+    width: auto;
+  }
+
+  .bio__label {
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  .bio__input {
+    flex-grow: 1;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .bio {
+    width: 47%;
+    margin:0;
+    .font(20px;20px;400);
+    margin-right: 3%;
+  }
+}

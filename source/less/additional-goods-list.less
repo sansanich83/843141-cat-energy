@@ -6,3 +6,31 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .additional-goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 768px;
+    .auto-margin;
+  }
+
+  .additional-goods-list__item {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-goods-list__item {
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .additional-goods-list {
+    width: 100%;
+  }
+}
