@@ -15,17 +15,14 @@
   background-position: center;
   background-repeat: no-repeat;
   .auto-margin;
+  width: 100%;
+  height: 240px;
 }
 
 .example__img--grace-cat {
   background-image: url("../img/after-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.example__img--fat-cat {
-  width: 100%;
-  height: 240px;
 }
 
 .example__cat-switcher {
@@ -40,12 +37,11 @@
   margin-bottom: 35px;
 }
 
-@media (min-width:@tablet-width) {
-
+@media (min-width: @tablet-width) {
   .example {
     background-color: @main-color;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     border-top: 1px solid @border-color;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,7 +49,6 @@
 
   .example__img--fat-cat {
     background-image: url("../img/before-tablet@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: 400px auto;
     width: 50%;
@@ -64,7 +59,6 @@
 
   .example__img--grace-cat {
     background-image: url("../img/after-tablet@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: 400px auto;
     width: 50%;
@@ -97,11 +91,10 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .example {
     border: none;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
   .example__slider {
@@ -120,7 +113,7 @@
   }
 
   .example__text {
-    padding:0;
+    padding: 0;
     width: 450px;
   }
 }
