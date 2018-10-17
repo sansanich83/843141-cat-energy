@@ -12,6 +12,60 @@
 }
 
 .point__text {
-  .small-arial;
+  .arial(14px, 18px, 400);
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .point {
+    width: 50%;
+    min-height: 310px;
+    flex-direction: column;
+  }
+
+  .point__text {
+    .arial(16px, 24px, 400);
+    padding-left: 0;
+    text-align: left;
+    width: 69%;
+  }
+
+  .point__img-wrapper {
+    background: @button-color;
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  .point--1 {
+    background-image: url(../img/1.svg);
+    background-repeat: no-repeat;
+    background-position: 45% 0;
+  }
+
+  .point--2 {
+    background-image: url(../img/2.svg);
+    background-repeat: no-repeat;
+    background-position: 45% 0;
+  }
+
+  .point--3 {
+    background-image: url(../img/3.svg);
+    background-repeat: no-repeat;
+    background-position: 45% 0;
+  }
+
+  .point--4 {
+    background-image: url(../img/4.svg);
+    background-repeat: no-repeat;
+    background-position: 45% 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .point {
+    width: 25%;
+  }
 }

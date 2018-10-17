@@ -1,12 +1,24 @@
 @button-color: #68b738;
 @main-color: #ffffff;
-@secondary-color:#f2f2f2;
+@secondary-color: #f2f2f2;
 @secondary-text-color: #444444;
 @border-color: #e6e6e6;
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@tablet-padding: 30px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 body {
   background: @main-color;
   font-family: "Oswald", sans-serif;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .auto-margin {
@@ -39,21 +51,22 @@ body {
   overflow: hidden;
 }
 
-.small-arial {
+.arial(@size;@line;@weight:400) {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: @size;
+  line-height: @line;
+  font-weight: @weight;
+}
+.font(@size;@height;@weight;@up: uppercase) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  text-transform: @up;
 }
 
-.smaller-arial {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.standard-padding {
-  padding-left: 20px;
-  padding-right: 20px;
+.standard-padding (@left-right:6%) {
+  padding-left: @left-right;
+  padding-right: @left-right;
 }
 
 .form-text {
@@ -61,4 +74,10 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form-text {
+    .font(20px;20px;400;uppercase);
+  }
 }

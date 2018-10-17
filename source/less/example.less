@@ -2,23 +2,27 @@
   background-color: @secondary-color;
   padding-left: 20px;
   padding-right: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__text {
-  .small-arial;
+  .arial(14px;18px);
 }
 
 .example__img--fat-cat {
   background-image: url("../img/before-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  .auto-margin;
+  width: 100%;
+  height: 240px;
 }
 
 .example__img--grace-cat {
   background-image: url("../img/after-mobile@1x.png");
-}
-
-.example__img {
-  width: 320px;
-  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .example__cat-switcher {
@@ -27,10 +31,89 @@
 }
 
 .example__cost {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  .font(14px;20px;400;uppercase);
   text-align: center;
   margin-top: 35px;
   margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @main-color;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 1px solid @border-color;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .example__img--fat-cat {
+    background-image: url("../img/before-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    width: 50%;
+    height: 340px;
+    background-position: right -203px top 0;
+    margin-top: -100px;
+  }
+
+  .example__img--grace-cat {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    width: 50%;
+    height: 340px;
+    background-position: -200px;
+    margin-top: -120px;
+  }
+
+  .example__text {
+    .arial(16px;24px);
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .example__slider {
+    background-color: @secondary-color;
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+  }
+
+  .example__cost {
+    float: right;
+    padding-right: 4%;
+    width: 25%;
+    margin-left: auto;
+    .font(20px;20px;400;uppercase);
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .example__slider {
+    width: 50%;
+  }
+
+  .example__cost {
+    width: 325px;
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .example__cost-value {
+    padding-left: 50px;
+  }
+
+  .example__text {
+    padding: 0;
+    width: 450px;
+  }
 }

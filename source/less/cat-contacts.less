@@ -15,3 +15,30 @@
 .cat-contacts__label {
   margin-top: 10px;
 }
+
+@media (min-width: @desktop-width) {
+  .cat-contacts__wrapper {
+    display: flex;
+  }
+
+  .cat-contacts__item {
+    width: 47%;
+    display: flex;
+  }
+
+  .cat-contacts__item--mail {
+    margin-right: 3%;
+  }
+
+  .cat-contacts__item--phone {
+    margin-left: 3%;
+  }
+
+  .cat-contacts__input {
+    flex-grow: 1;
+  }
+
+  .cat-contacts__label {
+    padding-right: 20px;
+  }
+}

@@ -6,3 +6,24 @@
 .way__items {
   margin: 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .way {
+    border: 1px solid @border-color;
+    min-height: 200px;
+  }
+
+  .way__items {
+    padding-top: 19px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .way {
+    width: 47%;
+    margin-left: 3%;
+    border: 1px solid @border-color;
+    min-height: 200px;
+  }
+}

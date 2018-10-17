@@ -3,9 +3,7 @@
 }
 
 .selection__invite {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+  .font(14px;18px;400;uppercase);
   padding-right: 10px;
   width: 250px;
   display: block;
@@ -24,5 +22,61 @@
 
 .selection__note {
   text-align: center;
-  .small-arial;
+  .arial(14px, 16px, 400);
+}
+
+@media (min-width: @tablet-width) {
+  .selection {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+
+  .selection__invite {
+    .font(20px;30px;400);
+    padding-right: 10px;
+    width: 60%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .selection__comments-text {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid @border-color;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .selection__submit-wrapper {
+    display: flex;
+    width: 768px;
+    .auto-margin;
+  }
+
+  .selection__submit {
+    margin: 0;
+    display: inline;
+    width: 283px;
+    height: 52px;
+  }
+
+  .selection__note {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection___bio-wrapper {
+    display: flex;
+  }
+
+  .selection__submit-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .selection__submit {
+    width: 50%;
+  }
 }

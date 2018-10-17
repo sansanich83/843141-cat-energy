@@ -7,7 +7,7 @@
   .ul-decor-off;
   display: flex;
   flex-wrap: wrap;
-  width: 180px;
+  min-width: 180px;
   border-top: 1px solid @border-color;
   border-bottom: 1px solid @border-color;
   padding-left: 50px;
@@ -18,4 +18,17 @@
 
 .social__item {
   flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    flex-grow: 3;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .social__list {
+    border: none;
+    padding-top: 40px;
+  }
 }
