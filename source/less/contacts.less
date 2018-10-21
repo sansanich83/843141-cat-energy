@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   padding: 20px;
+  padding-top:6px;
+  padding-bottom:24px;
 }
 
 .contacts__invite {
@@ -15,12 +17,13 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  color: @secondary-text-color;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
     min-height: 200px;
-    padding: 9%;
+    padding: 8.5% 9%;
     box-sizing: border-box;
     background-color: @secondary-color;
   }
@@ -43,7 +46,8 @@
     width: 570px;
     height: 201px;
     background-color: @main-color;
-    margin-left: 105px;
+    margin-left: 40px;
+    margin-top: -12px;
     padding-left: 70px;
     padding-top: 60px;
     padding-right: 50px;
@@ -53,6 +57,8 @@
     .font(20px;25px;400;uppercase);
     width: auto;
     padding: 0;
+    margin-top: 6px;
+    margin-left: 6px;
   }
 
   .contacts__address {
@@ -62,5 +68,6 @@
     text-align: left;
     padding-left: 50px;
     padding-right: 0;
+    margin-top: 6px;
   }
 }

@@ -1,12 +1,13 @@
 .diets {
-  margin-top: 20px;
+  margin-top: 12px;
   width: 100%;
   box-sizing: border-box;
   .standard-padding;
+  margin-bottom: -12px;
 }
 
 .diets__trend {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,15 +15,19 @@
     padding-left: 4%;
     padding-right: 4%;
   }
-}
 
+  .diets__trend {
+    margin-bottom: 30px;
+  }
+}
 @media (min-width: @desktop-width) {
   .diets {
     display: flex;
-    padding-left: 8%;
+    padding-left: 3.4%;
+    padding-right: 3.4%;
   }
 
   .diets__trend:last-child {
-    margin-left: 5%;
+    margin-left: 6%;
   }
 }

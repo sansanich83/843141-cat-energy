@@ -1,12 +1,13 @@
 .additional-card {
   border-bottom: 1px solid @border-color;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .additional-card__properties {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   .arial(14px, 14px, 400);
+
 }
 
 .additional-card__value {
@@ -17,29 +18,38 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-top: 12px;
 }
 
 @media (min-width: @tablet-width) {
   .additional-card {
     width: 708px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
     .auto-margin;
     box-sizing: border-box;
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+  }
+
+  .additional-card:nth-child(2) {
+    border-top: 1px solid @border-color;
   }
 
   .additional-card__title {
     .font(20px;20px;400);
-    margin: 0;
-    width: 60%;
+    margin-top: 26px;
+    margin-bottom: 0;
+    width: 50%;
     padding-left: 40px;
   }
 
   .additional-card__properties {
     .arial(16px;20px;400);
     margin-left: auto;
-    width: 30%;
+    width: 28%;
+    margin-top: 30px;
     padding-right: 40px;
   }
 

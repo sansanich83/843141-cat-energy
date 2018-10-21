@@ -14,6 +14,8 @@
 .point__text {
   .arial(14px, 18px, 400);
   padding-left: 20px;
+  color: @secondary-text-color;
+  margin-bottom: 11px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,6 +30,17 @@
     padding-left: 0;
     text-align: left;
     width: 69%;
+    margin-top: 30px;
+  }
+
+  .point--2 {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .point--4 {
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
   .point__img-wrapper {
@@ -36,36 +49,67 @@
     height: 80px;
     padding: 15px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .point--1 {
     background-image: url("../img/1.svg");
     background-repeat: no-repeat;
-    background-position: 45% 0;
+    background-position: 45% 8px;
   }
 
   .point--2 {
     background-image: url("../img/2.svg");
     background-repeat: no-repeat;
-    background-position: 45% 0;
+    background-position: 57% 8px;
   }
 
   .point--3 {
     background-image: url("../img/3.svg");
     background-repeat: no-repeat;
-    background-position: 45% 0;
+    background-position: 50% 8px;
   }
 
   .point--4 {
     background-image: url("../img/4.svg");
     background-repeat: no-repeat;
-    background-position: 45% 0;
+    background-position: 60% 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .point {
     width: 25%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+  }
+
+  .point--1 {
+    background-image: url("../img/1.svg");
+    background-repeat: no-repeat;
+    background-position: 65% 12px;
+  }
+
+  .point--2 {
+    background-image: url("../img/2.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 12px;
+  }
+
+  .point--3 {
+    background-image: url("../img/3.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 12px;
+  }
+
+  .point--4 {
+    background-image: url("../img/4.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 12px;
+  }
+
+  .point__text {
+    width: 100%;
   }
 }
