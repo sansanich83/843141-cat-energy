@@ -1,16 +1,19 @@
 .additional-goods-list {
   .ul-decor-off;
+  margin-top: -20px;
+  margin-bottom: 40px;
 }
 
 .additional-goods-list__item {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
   .additional-goods-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -50px;
     margin-bottom: 40px;
     width: 768px;
     .auto-margin;
@@ -19,18 +22,22 @@
   .additional-goods-list__item {
     width: 50%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
+    padding-left: 60px;
+    box-sizing: border-box;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .additional-goods-list__item {
     width: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 34px;
   }
 
   .additional-goods-list {
     width: 100%;
+    margin-top: -46px;
   }
 }

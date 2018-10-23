@@ -61,46 +61,40 @@
           </div>
         </div>
         <div class="selection__way way">
-          <label class="way__items form-text" for="defating">
-            <input class="way__input" type="radio" id="defating" name="trend" value="defat">
-            Похудение
-          </label>
-          <label class="way__items form-text" for="muscle">
-            <input class="way__input" type="radio" id="muscle" name="trend" value="muscle">
-            Набор массы
-          </label>
-          <label class="way__items form-text" for="advice">
-            <input class="way__input" type="radio" id="advice" name="trend" value="unknow">
-            Не знаю (нужен ваш совет)
-          </label>
+          <input class="way__input" type="radio" id="defating" name="trend" value="defat">
+          <label class="way__items form-text" for="defating">Похудение</label>
+          <input class="way__input" type="radio" id="muscle" name="trend" value="muscle" checked>
+          <label class="way__items form-text" for="muscle">Набор массы</label>
+          <input class="way__input" type="radio" id="advice" name="trend" value="unknow">
+          <label class="way__items form-text" for="advice">Не знаю (нужен ваш совет)</label>
         </div>
       </div>
       <div class="selection__cat-contacts cat-contacts">
         <div class="selection-title">
-          <h3 class="cat-contacts__header selection-title__title page-main__header-line">Контактные данные (владельца
+          <h3 class="cat-contacts__header selection-title__title page-main__header-line page-main__header-line--short">Контактные данные (владельца
             кота)</h3>
         </div>
         <div class="cat-contacts__wrapper">
-          <div class="cat-contacts__item cat-contacts__item--mail">
+          <div class="cat-contacts__item cat-contacts__label--mail cat-contacts__item--mail">
             <label class="cat-contacts__label form-text" for="email">E-mail:*</label>
-            <input class="cat-contacts__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
+            <input class="cat-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
           </div>
           <div class="cat-contacts__item cat-contacts__item--phone">
-            <label class="cat-contacts__label form-text" for="cat-contacts">Телефон:*</label>
-            <input class="cat-contacts__input" type="text" id="cat-contacts" name="cat-contacts" placeholder="8 (960) 900-60-90">
+            <label class="cat-contacts__label cat-contacts__label--phone form-text" for="cat-contacts">Телефон:*</label>
+            <input class="cat-contacts__input" type="number" id="cat-contacts" name="cat-contacts" placeholder="8 (960) 900-60-90">
           </div>
         </div>
       </div>
       <div class="selection__comments">
         <div class="selection-title">
-          <h3 class="selection-title__title page-main__header-line">Комментарий</h3>
+          <h3 class="selection-title__title page-main__header-line page-main__header-line--short">Комментарий</h3>
           <div class="selection-title__divline"></div>
         </div>
         <textarea class="selection__comments-text form-text" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
       </div>
       <div class="selection__more more">
         <div class="selection-title">
-          <h3 class="selection-title__title page-main__header-line">Дополнительно</h3>
+          <h3 class="selection-title__title page-main__header-line page-main__header-line--short">Дополнительно</h3>
         </div>
         <ul class="more__list additional-goods-list">
           <li class="additional-goods-list__item additional-goods-checkbox">

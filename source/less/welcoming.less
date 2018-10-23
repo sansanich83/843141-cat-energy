@@ -68,9 +68,10 @@
 @media (min-width: @desktop-width) {
   .welcoming {
     background-image: url("../img/index-can-desktop@1x.png"),
-      url("../img/index-background-desktop@1x.jpg");
+      url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(225deg, @button-color 25%, white);
     background-repeat: no-repeat;
-    background-position: 64% 140px, right 0 top -1px;
+    background-position: 64% 140px, right 0 top -1px, top 0 right 0;
     background-size: 550px 500px, 50% auto;
     margin-top: -170px;
     padding-left: 9%;
