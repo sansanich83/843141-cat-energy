@@ -28,6 +28,13 @@
 .page-footer__logo {
   margin-top: 35px;
   margin-bottom: 35px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -58,7 +65,7 @@
   }
 
   .page-footer__logo {
-    padding-left: 4%;
+    margin-left: 30px;
     margin-right: 0;
   }
 
@@ -66,9 +73,19 @@
     background-color: @secondary-color;
     margin-top: 76px;
   }
+
+  .page-footer__contacts--white {
+    background-color: @main-color;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    max-width: 1440px;
+    .auto-margin;
+  }
+
   .page-footer__map {
     width: 100%;
     height: 400px;

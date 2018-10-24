@@ -16,9 +16,24 @@
   min-height: 45px;
   box-sizing: border-box;
   flex-grow: 1;
+
+  &:hover,
+  &:focus {
+    border-color: darken(@border-color, 20%);
+  }
+  &:active {
+    border-color: darken(@border-color, 100%);
+  }
+  &:invalid {
+    border-color: @error-color;
+  }
 }
 
 .cat-contacts__label {
+  margin-top: 12px;
+  padding-right: 7px;
+  width: 73px;
+
   &--mail::after {
     content: "";
     position: absolute;
@@ -32,6 +47,7 @@
     top: 16px;
     z-index: 10;
   }
+
   &--phone::after {
     content: "";
     position: absolute;
@@ -45,12 +61,6 @@
     top: 16px;
     z-index: 10;
   }
-}
-
-.cat-contacts__label {
-  margin-top: 12px;
-  padding-right: 7px;
-  width: 73px;
 }
 
 .cat-contacts__wrapper {

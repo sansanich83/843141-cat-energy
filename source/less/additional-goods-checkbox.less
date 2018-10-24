@@ -30,6 +30,24 @@
     top: 13px;
     left: 19px;
   }
+
+  &:hover::after,
+  &:focus::after {
+    border: 1px solid darken(@border-color,50%);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.way__input {
+  display: none;
+
+  &:checked + .way__items::before {
+    background-color: @button-color;
+    box-shadow: inset 0 0 0 8px @main-color;
+  }
 }
 
 .additional-goods-checkbox__checkbox {

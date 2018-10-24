@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -60,8 +59,7 @@
           поможет вашему
           питомцу сбросить лишний вес.
         </p>
-        <a class="diet-mode__to-catalog" href="catalog.html">Каталог Slim<img class="diet-mode__arrow" src="./img/icon-right-arrow-long.svg"
-            width="23" alt="Переход в каталог"></a>
+        <a class="diet-mode__to-catalog" href="catalog.html">Каталог Slim</a>
       </div>
       <div class="diets__trend diet-mode">
         <div class="diet-mode-title">
@@ -73,8 +71,7 @@
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!
         </p>
-        <a class="diet-mode__to-catalog" href="catalog.html">Каталог Pro<img class="diet-mode__arrow" src="./img/icon-right-arrow-long.svg"
-            width="23" alt="Переход в каталог"></a>
+        <a class="diet-mode__to-catalog" href="catalog.html">Каталог Pro</a>
       </div>
 
     </section>
@@ -139,14 +136,11 @@
         </div>
         <div class="example__img example__img--grace-cat">
         </div>
-        <!-- .example__img--grace-cat второго кота перелючать бэкграунд в JS -->
         <div class="example__cat-switcher switcher">
-          <label class="switcher__label switcher__label--before">Было</label>
-          <div class="switcher__bar">
-            <div class="switcher__bar-lever"></div>
-            <!-- .switcher__bar-lever--right класс для переключателя -->
-          </div>
-          <label class="switcher__label switcher__label--after">Стало</label>
+          <label class="switcher__label switcher__label--before" tabindex="0">Было</label>
+          <div class="switcher__bar"></div>
+          <div class="switcher__bar-lever" tabindex="0"></div>
+          <label class="switcher__label switcher__label--after" tabindex="0">Стало</label>
         </div>
       </div>
     </section>
@@ -155,7 +149,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__map">
-      <div class="page-footer__contacts contacts contacts--catalog">
+      <div class="page-footer__contacts page-footer__contacts--white contacts contacts--catalog">
         <b class="contacts__invite">Приглашаем к сотрудничеству дилеров!
         </b>
         <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -164,7 +158,9 @@
       <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     </div>
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
+      <a href="index.html">
+        <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
+      </a>
       <div class="page-footer__social-wrapper">
         <div class="page-footer__social social">
           <ul class="social__list">

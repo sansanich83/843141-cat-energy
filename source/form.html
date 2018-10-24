@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -38,7 +37,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--form">
 
     <h2 class="page-main__section-header page-main__section-header--form">Подбор программы</h2>
 
@@ -62,16 +61,17 @@
         </div>
         <div class="selection__way way">
           <input class="way__input" type="radio" id="defating" name="trend" value="defat">
-          <label class="way__items form-text" for="defating">Похудение</label>
+          <label class="way__items form-text" for="defating" tabindex="0">Похудение</label>
           <input class="way__input" type="radio" id="muscle" name="trend" value="muscle" checked>
-          <label class="way__items form-text" for="muscle">Набор массы</label>
+          <label class="way__items form-text" for="muscle" tabindex="0">Набор массы</label>
           <input class="way__input" type="radio" id="advice" name="trend" value="unknow">
-          <label class="way__items form-text" for="advice">Не знаю (нужен ваш совет)</label>
+          <label class="way__items form-text" for="advice" tabindex="0">Не знаю (нужен ваш совет)</label>
         </div>
       </div>
       <div class="selection__cat-contacts cat-contacts">
         <div class="selection-title">
-          <h3 class="cat-contacts__header selection-title__title page-main__header-line page-main__header-line--short">Контактные данные (владельца
+          <h3 class="cat-contacts__header selection-title__title page-main__header-line page-main__header-line--short">Контактные
+            данные (владельца
             кота)</h3>
         </div>
         <div class="cat-contacts__wrapper">
@@ -99,19 +99,19 @@
         <ul class="more__list additional-goods-list">
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="sweet" name="sweet" type="checkbox" checked>
-            <label class="additional-goods-checkbox__label form-text" for="sweet">Сахарозаменитель</label>
+            <label class="additional-goods-checkbox__label form-text" for="sweet" tabindex="0">Сахарозаменитель</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="water" name="water" type="checkbox">
-            <label class="additional-goods-checkbox__label form-text" for="water">Питьевая вода</label>
+            <label class="additional-goods-checkbox__label form-text" for="water" tabindex="0">Питьевая вода</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="milk" name="milk" type="checkbox">
-            <label class="additional-goods-checkbox__label form-text" for="milk">Молоко</label>
+            <label class="additional-goods-checkbox__label form-text" for="milk" tabindex="0">Молоко</label>
           </li>
           <li class="additional-goods-list__item additional-goods-checkbox">
             <input class="additional-goods-checkbox__checkbox" id="vitamins" name="vitamins" type="checkbox">
-            <label class="additional-goods-checkbox__label form-text" for="vitamins">Витамины</label>
+            <label class="additional-goods-checkbox__label form-text" for="vitamins" tabindex="0">Витамины</label>
           </li>
         </ul>
         <div class="selection__submit-wrapper">
@@ -135,7 +135,9 @@
       <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     </div>
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
+      <a href="index.html">
+        <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
+      </a>
       <div class="page-footer__social-wrapper">
         <div class="page-footer__social social">
           <ul class="social__list">

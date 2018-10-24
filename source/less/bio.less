@@ -10,8 +10,8 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 4px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bio__label {
@@ -24,6 +24,16 @@
   border: 1px solid @border-color;
   padding-left: 10px;
   flex-grow: 1;
+  &:hover,
+  &:focus {
+    border-color: darken(@border-color, 20%);
+  }
+  &:active {
+    border-color: darken(@border-color, 100%);
+  }
+  &:invalid {
+    border-color: @error-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
