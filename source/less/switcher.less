@@ -22,7 +22,7 @@
   border-radius: 5px;
   position: absolute;
   top: 5px;
-  left: 59px;
+  left: 60px;
 }
 
 .switcher__bar-lever--right {
@@ -31,14 +31,19 @@
 
 .switcher__label {
   .font(16px;20px;400;uppercase);
+  border:none;
+  font-family: "Oswald", sans-serif;
+  background: none;
+  outline: none;
 }
 
 .switcher__label--after {
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: -10px;
 }
 
 .switcher__label--before {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,8 +52,9 @@
     width: 570px;
     position: relative;
     z-index: 10;
-    margin-top: -42px;
+    margin-top: -44px;
     margin-bottom: 36px;
+    padding-right: 10px;
   }
 
   .switcher__label {
@@ -73,8 +79,8 @@
     box-shadow: 0 0 1px 1px #bdbdbd, 0 3px 6px 0 #bdbdbd;
     border: 13px solid white;
     box-sizing: border-box;
-    top: -8px;
-    left: 268px;
+    top: -6px;
+    left: 273px;
     outline:none;
 
     &:hover,
@@ -90,10 +96,11 @@
   .switcher__bar {
     width: 430px;
     height: 5px;
-    margin-left: 23px;
+    margin-left: 14px;
     background-color: #dcdcdc;
     border: none;
     box-shadow: none;
+    margin-top: 9px;
   }
 
   .switcher__label--before {

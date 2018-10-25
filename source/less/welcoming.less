@@ -29,6 +29,7 @@
 .welcoming__button {
   margin-top: auto;
   margin-bottom: 10px;
+  .font(14px;20px;400);
 }
 
 @media (min-width: @tablet-width) {
@@ -60,25 +61,31 @@
   }
 
   .welcoming__button {
-    margin-left: 0;
-    margin-top: 50px;
+    margin-left: 3px;
+    margin-top: 48px;
+    padding-bottom: 18px;
+    font-size:20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcoming {
     background-image: url("../img/index-can-desktop@1x.png"),
-      url("../img/index-background-desktop@1x.jpg"),
+      url("../img/index-background-desktop1300.png"),
       linear-gradient(225deg, @button-color 25%, white);
     background-repeat: no-repeat;
-    background-position: 64% 140px, right 0 top -1px, top 0 right 0;
+    background-position: 66% 151px, right 2px top 10px, top 0 right 0;
     background-size: 550px 500px, 50% auto;
-    margin-top: -170px;
+    margin-top: -171px;
     padding-left: 9%;
     margin-bottom: 20px;
     min-height: 757px;
     max-width: 100%;
     .auto-margin;
+  }
+
+  .welcoming__button{
+    margin-top: 52px;
   }
 
   .welcoming__header {
@@ -87,5 +94,22 @@
     .font(60px;60px;400;none);
     color: black;
     padding-top: 234px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .welcoming {
+    background-image: url("../img/index-can-desktop@1x.png"),
+      url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(225deg, @button-color 25%, white);
+    background-repeat: no-repeat;
+    background-position: 64% 140px, right 0 top -1px, top 0 right 0;
+    background-size: 550px 500px, 50% auto;
+    margin-top: -171px;
+    padding-left: 9%;
+    margin-bottom: 20px;
+    min-height: 757px;
+    max-width: 100%;
+    .auto-margin;
   }
 }

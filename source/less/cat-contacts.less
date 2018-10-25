@@ -100,8 +100,8 @@
 @media (min-width: @desktop-width) {
   .cat-contacts__wrapper {
     display: flex;
-    padding-left: 3.3%;
-    padding-right: 3.3%;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
     margin-bottom: 30px;
   }
 
@@ -120,9 +120,21 @@
 
   .cat-contacts__input {
     flex-grow: 1;
+    margin-top: 2px;
   }
 
   .cat-contacts__label {
-    padding-right: 20px;
+    padding-right: 22px;
+    margin-top: 18px;
+  }
+
+  .cat-contacts__label--mail::after {
+    top: 22px;
+    right: 10px;
+  }
+
+  .cat-contacts__label--phone::after {
+    top: 22px;
+    right: 8px;
   }
 }
