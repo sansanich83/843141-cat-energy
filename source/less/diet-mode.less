@@ -102,11 +102,11 @@
 
 @media (min-width: @desktop-width) {
   .diet-mode {
-    width: 50%;
+    width: 501px;
     display: flex;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-left: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     margin-right: auto;
     padding-right: 20px;
   }
@@ -117,13 +117,18 @@
   }
 
   .diet-mode__text {
-    margin-top: 37px;
+    margin-top: 38px;
     width: 100%;
+    margin-left: -1px;
   }
 
   .diet-mode__to-catalog {
     margin-top: 16px;
     margin-left: 4px;
     width: 25%;
+    &::after {
+      left: 130px;
+      top:5px;
+    }
   }
 }
