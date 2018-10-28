@@ -24,13 +24,16 @@
   border: 1px solid @border-color;
   padding-left: 12px;
   flex-grow: 1;
+
   &:hover,
   &:focus {
     border-color: darken(@border-color, 20%);
   }
+
   &:active {
     border-color: darken(@border-color, 100%);
   }
+
   &:invalid {
     border-color: @error-color;
   }
@@ -85,8 +88,8 @@
   .bio__input {
     padding-top: 9px;
     padding-bottom: 14px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .bio__label {

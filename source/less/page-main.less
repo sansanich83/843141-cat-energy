@@ -230,17 +230,20 @@
   .page-main__header-line--short {
     padding-left: 43px;
     padding-bottom: 76px;
-    &::after{
+
+    &::after {
       margin-right: -17px;
     }
   }
-  
+
   .page-main__header-line--comment {
-    margin-left: 0px;
+    margin-left: 0;
+
     &::before {
       margin-left: -41px;
       margin-right: 35px;
     }
+
     &::after {
       margin-right: -18px;
     }
@@ -249,7 +252,6 @@
   .page-main__header-line--add {
     padding-left: 31px;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -304,6 +306,7 @@
       margin-right: -17px;
     }
   }
+
   .page-main__header-line--long::after {
     margin-right: -391px;
   }
@@ -326,7 +329,7 @@
   .page-main__button--show-all {
     width: 170px;
   }
-  
+
   .page-main__header-line--add {
     padding-left: 44px;
   }
