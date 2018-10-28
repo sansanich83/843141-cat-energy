@@ -34,7 +34,7 @@
 .example__cost {
   .font(14px;20px;400;uppercase);
   text-align: center;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 35px;
 }
 
@@ -46,6 +46,7 @@
     border-top: 1px solid @border-color;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top:22px;
   }
 
   .example__img--fat-cat {
@@ -72,15 +73,15 @@
   .example__text {
     .arial(16px;24px);
     padding-left: 4%;
-    padding-right: 4%;
-    margin-top: 61px;
+    padding-right: 5%;
+    margin-top: 65px;
   }
 
   .example__slider {
     background-color: @secondary-color;
     width: 100%;
     display: flex;
-    margin-top: 230px;
+    margin-top: 380px;
     flex-wrap: wrap;
   }
 
@@ -99,13 +100,20 @@
   .example {
     border: none;
     margin-bottom: 0;
-    max-width: 1440px;
+    max-width: 100%;
+    .auto-margin;
+    background-image: linear-gradient(to bottom, @main-color 154px , @secondary-color 154px) ;
+  }
+
+  .example__wrapper {
+    width: 1300px;
+    display: flex;
     .auto-margin;
   }
 
   .example__slider {
     width: 50%;
-    margin-top: 156px;
+    margin-top: 132px;
     box-sizing: border-box;
   }
 
@@ -114,6 +122,7 @@
     margin-left: -3px;
     padding: 0;
     text-align: left;
+    margin-top: 36px;
   }
 
   .example__cost-value {
@@ -123,8 +132,9 @@
   .example__text {
     padding: 0;
     width: 433px;
-    margin-top: 72px;
-    margin-bottom: 28px;
+    margin-top: 54px;
+    margin-bottom: 26px;
+    margin-left: -4px;
   }
 
   .example__img--fat-cat {

@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   padding: 20px;
-  padding-top: 6px;
+  padding-top: 4px;
   padding-bottom: 24px;
 }
 
@@ -30,7 +30,7 @@
 @media (min-width: @tablet-width) {
   .contacts {
     min-height: 200px;
-    padding: 8.5% 9%;
+    padding: 6.5% 9.2%;
     box-sizing: border-box;
     background-color: @secondary-color;
   }
@@ -62,13 +62,15 @@
     padding-left: 70px;
     padding-top: 60px;
     padding-right: 50px;
+    position: relative;
+    z-index: 2;
   }
 
   .contacts__invite {
     .font(20px;25px;400;uppercase);
     width: auto;
     padding: 0;
-    margin-top: 6px;
+    margin-top: 0;
     margin-left: 6px;
   }
 
@@ -79,6 +81,10 @@
     text-align: left;
     padding-left: 50px;
     padding-right: 0;
-    margin-top: 6px;
+    margin-top: 0;
+  }
+
+  .page-footer__map {
+    max-width: 1440px;
   }
 }
