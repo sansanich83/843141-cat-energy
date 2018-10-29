@@ -3,20 +3,34 @@
 }
 
 .site-list__a {
+  margin-left: 0;
   .link-decor-off;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {
   width: 100%;
-  height: 65px;
+  height: 66px;
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid @border-color;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 22px;
   box-sizing: border-box;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid @border-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,41 +39,79 @@
     flex-wrap: wrap;
   }
 
+  .site-list__a {
+    padding-bottom: 6px;
+  }
+
   .site-list__item {
     width: auto;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 13px;
     border: none;
     .font(18px;25px;400);
     color: #222222;
     flex-grow: 1;
   }
 
-  .site-list__item--current {
+  .site-list__item:first-child {
+    margin-left: 22px;
+    margin-right: -5px;
+  }
+
+  .site-list__item:last-child {
+    padding-right: 20px;
+    border: none;
+  }
+
+  .site-list__a--catalog {
     border-bottom: 1px solid @button-color;
   }
 
   .site-list__a--index {
+    border-bottom: 1px solid @button-color;
+  }
+
+  .site-list__a--form {
     border-bottom: 1px solid @button-color;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    padding-top: 22px;
+    margin-left: 45%;
+    padding-right: 10px;
+  }
+
   .site-list__item:first-child {
-    margin-left: 50%;
+    margin-left: -3px;
+    margin-right: 4px;
+  }
+
+  .site-list__item--index:first-child {
+    margin-right: -18px;
   }
 
   .site-list__item {
-    flex-grow: 0;
+    flex-grow: 1;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .site-list__a--index {
     color: @main-color;
     border-bottom: 1px solid @main-color;
+    margin-right: 20px;
   }
 
-  .site-list__a {
+  .site-list__a--white {
     .font(20px;25px;400);
+    color: @main-color;
+  }
+
+  .site-list__item:last-child {
+    padding-right: 22px;
   }
 }

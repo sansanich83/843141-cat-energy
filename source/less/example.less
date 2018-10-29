@@ -8,6 +8,7 @@
 
 .example__text {
   .arial(14px;18px);
+  color: @secondary-text-color;
 }
 
 .example__img--fat-cat {
@@ -26,14 +27,14 @@
 }
 
 .example__cat-switcher {
-  margin-top: 34px;
+  margin-top: 30px;
   padding-bottom: 34px;
 }
 
 .example__cost {
   .font(14px;20px;400;uppercase);
   text-align: center;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 35px;
 }
 
@@ -45,49 +46,53 @@
     border-top: 1px solid @border-color;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 22px;
   }
 
   .example__img--fat-cat {
     background-image: url("../img/before-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 400px auto;
+    background-size: 690px auto;
     width: 50%;
-    height: 340px;
-    background-position: right -203px top 0;
-    margin-top: -100px;
+    height: 580px;
+    background-position: right -350px top 10px;
+    margin-top: -180px;
   }
 
   .example__img--grace-cat {
     background-image: url("../img/after-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 400px auto;
+    background-size: 690px auto;
     width: 50%;
-    height: 340px;
-    background-position: -200px;
-    margin-top: -120px;
+    height: 580px;
+    background-position: -340px 30px;
+    margin-top: -200px;
+    margin-bottom: 28px;
   }
 
   .example__text {
     .arial(16px;24px);
     padding-left: 4%;
-    padding-right: 4%;
+    padding-right: 5%;
+    margin-top: 65px;
   }
 
   .example__slider {
     background-color: @secondary-color;
     width: 100%;
     display: flex;
-    margin-top: 150px;
+    margin-top: 380px;
     flex-wrap: wrap;
   }
 
   .example__cost {
     float: right;
     padding-right: 4%;
-    width: 25%;
+    width: 177px;
     margin-left: auto;
-    .font(20px;20px;400;uppercase);
+    .font(20px;28px;400;uppercase);
     text-align: right;
+    padding-top: 12px;
   }
 }
 
@@ -95,25 +100,52 @@
   .example {
     border: none;
     margin-bottom: 0;
+    max-width: 100%;
+    .auto-margin;
+    background-image: linear-gradient(
+      to bottom,
+      @main-color 154px,
+      @secondary-color 154px
+    );
+  }
+
+  .example__wrapper {
+    width: 1300px;
+    display: flex;
+    .auto-margin;
   }
 
   .example__slider {
     width: 50%;
+    margin-top: 132px;
+    box-sizing: border-box;
   }
 
   .example__cost {
     width: 325px;
-    margin-left: 0;
+    margin-left: -3px;
     padding: 0;
     text-align: left;
+    margin-top: 36px;
   }
 
   .example__cost-value {
-    padding-left: 50px;
+    padding-left: 55px;
   }
 
   .example__text {
     padding: 0;
-    width: 450px;
+    width: 433px;
+    margin-top: 54px;
+    margin-bottom: 26px;
+    margin-left: -4px;
+  }
+
+  .example__img--fat-cat {
+    background-position: right -326px top -8px;
+  }
+
+  .example__img--grace-cat {
+    background-position: -364px 10px;
   }
 }

@@ -1,28 +1,38 @@
 .diets {
-  margin-top: 20px;
+  margin-top: 12px;
   width: 100%;
   box-sizing: border-box;
   .standard-padding;
+  margin-bottom: -12px;
 }
 
 .diets__trend {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: @tablet-width) {
   .diets {
     padding-left: 4%;
     padding-right: 4%;
+    margin-bottom: 43px;
+  }
+
+  .diets__trend {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .diets {
     display: flex;
-    padding-left: 8%;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1300px;
+    .auto-margin;
+    margin-top: 29px;
   }
 
   .diets__trend:last-child {
-    margin-left: 5%;
+    margin-left: 6%;
   }
 }

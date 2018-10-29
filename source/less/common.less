@@ -4,10 +4,11 @@
 @secondary-text-color: #444444;
 @border-color: #e6e6e6;
 @tablet-width: 768px;
-@desktop-width: 1440px;
+@desktop-width: 1300px;
 @tablet-padding: 30px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+@error-color: #ff8282;
 
 body {
   background: @main-color;
@@ -15,10 +16,6 @@ body {
   min-width: 320px;
   padding: 0;
   margin: 0;
-}
-
-img {
-  max-width: 100%;
 }
 
 .auto-margin {
@@ -62,6 +59,7 @@ img {
   line-height: @height;
   font-weight: @weight;
   text-transform: @up;
+  font-family: "Oswald", sans-serif;
 }
 
 .standard-padding (@left-right:6%) {

@@ -1,10 +1,31 @@
 .instructions {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
+  margin-top: -16px;
 }
 
 @media (min-width: @tablet-width) {
   .instructions {
-    padding-left: 8%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 46px;
+  }
+
+  .instruction__header {
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instructions {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1300px;
+    .auto-margin;
+  }
+
+  .instruction__header {
+    margin-left: 3.2%;
   }
 }
