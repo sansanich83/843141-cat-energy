@@ -38,6 +38,18 @@
   margin-bottom: 35px;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .example__img--fat-cat {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px;
+  }
+
+  .example__img--grace-cat {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 320px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .example {
     background-color: @main-color;
@@ -57,6 +69,11 @@
     height: 580px;
     background-position: right -350px top 10px;
     margin-top: -180px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .example__img--grace-cat {
@@ -68,6 +85,11 @@
     background-position: -340px 30px;
     margin-top: -200px;
     margin-bottom: 28px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .example__text {
@@ -102,11 +124,7 @@
     margin-bottom: 0;
     max-width: 100%;
     .auto-margin;
-    background-image: linear-gradient(
-      to bottom,
-      @main-color 154px,
-      @secondary-color 154px
-    );
+    background-image: linear-gradient(to bottom, @main-color 154px, @secondary-color 154px);
   }
 
   .example__wrapper {
@@ -119,6 +137,28 @@
     width: 50%;
     margin-top: 132px;
     box-sizing: border-box;
+  }
+
+  .example__img--fat-cat {
+    background-image: url("../img/before-desktop@1x.png");
+    background-size: 690px auto;
+    background-position: right -326px top -8px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-desktop@2x.png");
+      background-size: 690px auto;
+    }
+  }
+
+  .example__img--grace-cat {
+    background-image: url("../img/after-desktop@1x.png");
+    background-size: 690px auto;
+    background-position: -364px 10px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png");
+      background-size: 690px auto;
+    }
   }
 
   .example__cost {
@@ -139,13 +179,5 @@
     margin-top: 54px;
     margin-bottom: 26px;
     margin-left: -4px;
-  }
-
-  .example__img--fat-cat {
-    background-position: right -326px top -8px;
-  }
-
-  .example__img--grace-cat {
-    background-position: -364px 10px;
   }
 }

@@ -23,6 +23,12 @@
   background-size: 61px auto, 100% auto;
   background-position: 50% 57%, 0% 78px;
   margin: 0 auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+    background-size: 61px auto, 320px auto;
+  }
 }
 
 .page-footer__imap--index {
@@ -64,6 +70,12 @@
     background-size: 123px auto, 100% auto;
     background-position: 50% 70%, 50% 194px;
     margin: 0 auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-tablet@2x.png");
+      background-size: 123px auto, 100% auto;
+    }
   }
 
   .page-footer__wrapper {
@@ -117,6 +129,12 @@
     padding-top: 99px;
     box-sizing: border-box;
     position: relative;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+      background-size: 122px auto, 1440px auto;
+    }
   }
 
   .page-footer__contacts {
