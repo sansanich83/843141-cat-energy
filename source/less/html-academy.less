@@ -17,12 +17,13 @@
 
 .html-academy__link {
   margin-right: -5px;
+  .link-decor-off;
 }
 
 @media (min-width: @tablet-width) {
   .html-academy {
     flex-wrap: nowrap;
-    padding-top: 30px;
+    padding-top: 14px;
     flex-grow: 1;
     width: 170px;
     padding-left: 0;
@@ -34,10 +35,26 @@
     margin-top: 12px;
     margin-left: auto;
     margin-right: 13px;
+    margin-bottom: 57px;
   }
 
   .html-academy__link {
-    margin-top: 10px;
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 57px;
+  }
+
+  .html-academy__link {
+    fill: @secondary-text-color;
+
+    &:hover svg {
+      fill: @button-color;
+      transition: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -50,7 +67,7 @@
     padding-right: 0;
     box-sizing: border-box;
     margin-left: auto;
-    margin-right: 42px;
+    margin-right: 36px;
     margin-top: 4px;
   }
 }
