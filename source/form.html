@@ -140,33 +140,43 @@
       </a>
       <div class="page-footer__social-wrapper">
         <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com">
-                <img class="social__link-img" src="./img/icon-vk.svg"  width="23" height="23" alt="Наша страница вконтакте">
+            <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Наша страница Вконтакте">
+                    <svg class="social__svg" role="img" width="33" height="33">
+                      <use xlink:href="./img/sprite.svg#vk-svg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Наша страница в Инстаграме">
+                    <svg class="social__svg" role="img" width="26" height="26">
+                      <use xlink:href="./img/sprite.svg#insta-svg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Наша страница в фэйсбуке">
+                    <svg role="img" class="social__svg" width="31" height="31">
+                      <use xlink:href="./img/sprite.svg#fb-svg"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__created html-academy">
+              <a class="html-academy__link" href="https://html-academy.ru" aria-label="Страница Академии"><span class="html-academy__name">HTML
+                  Academy</span>
+                <svg class="social__svg" role="img" width="42" height="42">
+                  <use xlink:href="./img/sprite.svg#html-svg"></use>
+                </svg>
               </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://youtube.com">
-                <img class="social__link-img" src="./img/icon-insta.svg"  width="16" height="16" alt="Наш канал в ютубе">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com">
-                <img class="social__link-img" src="./img/icon-fb.svg"  width="21" height="21" alt="Наша страница твиттере">
-              </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <div class="page-footer__created html-academy">
-          <span class="html-academy__name">HTML Academy</span>
-          <a class="html-academy__link" href="https://html-academy.ru">
-            <img src="./img/htmlacademy.svg" width="40" height="40" alt="html-academy__img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
+    
+      <script src="./js/svgxuse.min.js" defer></script>
 
 </body>
 
