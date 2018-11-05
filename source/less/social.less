@@ -21,10 +21,29 @@
 
 .social__item:first-child {
   margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.social__item:nth-child(2) {
+  margin-top: 4px;
+  margin-left: 2px;
 }
 
 .social__item:last-child {
   margin-right: auto;
+}
+
+.social__svg {
+  fill: @secondary-text-color;
+
+  &:hover {
+    fill: @button-color;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
