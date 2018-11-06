@@ -11,6 +11,10 @@
 
 <body>
 
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -52,7 +56,7 @@
         <div class="diet-mode-title">
           <svg class="diet-mode-title__img diet-mode-title__img--defating" width="70" height="55" aria-hidden="true"
             role="presentation">
-            <use xlink:href="./img/sprite.svg#cat-defating"></use>
+            <use xlink:href="#icon-cat-slim"></use>
           </svg>
         </div>
         <h3 class="diet-mode__header diet-mode__header--defating">Похудение</h3>
@@ -66,7 +70,7 @@
       <div class="diets__trend diet-mode">
         <div class="diet-mode-title">
           <svg class="diet-mode-title__img diet-mode-title__img--muscle" width="70" height="60" aria-hidden="true" role="presentation">
-            <use xlink:href="./img/sprite.svg#cat-muscle"></use>
+            <use xlink:href="#icon-cat-pro"></use>
           </svg>
         </div>
         <h3 class="diet-mode__header diet-mode__header--muscle">Набор Массы</h3>
@@ -170,9 +174,7 @@
     <!-- <iframe class="page-footer__imap page-footer__imap--index" src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300" frameborder="0"></iframe> -->
     <div class="page-footer__wrapper">
       <a href="index.html">
-        <svg class="page-footer__logo" width="128" height="24" aria-label="логотип сайта">
-          <use xlink:href="./img/sprite.svg#logo-footer-svg"></use>
-        </svg>
+        <img class="page-footer__logo" src="./img/logo-footer.svg" width="128" height="24" alt="логотип сайта">
       </a>
       <div class="page-footer__social-wrapper">
         <div class="page-footer__social social">
@@ -180,21 +182,21 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Наша страница Вконтакте">
                 <svg class="social__svg" role="img" width="33" height="33">
-                  <use xlink:href="./img/sprite.svg#vk-svg"></use>
+                  <use xlink:href="./img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Наша страница в Инстаграме">
                 <svg class="social__svg" role="img" width="26" height="26">
-                  <use xlink:href="./img/sprite.svg#insta-svg"></use>
+                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Наша страница в фэйсбуке">
                 <svg role="img" class="social__svg" width="31" height="31">
-                  <use xlink:href="./img/sprite.svg#fb-svg"></use>
+                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -204,7 +206,7 @@
           <a class="html-academy__link" href="https://html-academy.ru" aria-label="Страница Академии"><span class="html-academy__name">HTML
               Academy</span>
             <svg class="social__svg" role="img" width="42" height="42">
-              <use xlink:href="./img/sprite.svg#html-svg"></use>
+              <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
