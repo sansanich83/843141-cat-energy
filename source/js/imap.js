@@ -1,3 +1,4 @@
+/* stylelint-disable */
 ymaps.ready(init);
 
 function init() {
