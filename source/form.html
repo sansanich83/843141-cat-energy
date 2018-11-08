@@ -137,6 +137,7 @@
         </span>
       </div>
     </div>
+    <div id="imap" class="page-footer__imap page-footer__imap--index" width="300" height="300"></div>
     <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     <div class="page-footer__wrapper">
       <a href="index.html">
@@ -147,22 +148,22 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Наша страница Вконтакте">
-                <svg class="social__svg" role="img" width="33" height="33">
-                  <use xlink:href="./img/#icon-vk"></use>
+                <svg class="social__svg social__svg--vk" role="img" width="33" height="33">
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Наша страница в Инстаграме">
-                <svg class="social__svg" role="img" width="26" height="26">
-                  <use xlink:href="./img/#icon-insta"></use>
+                <svg class="social__svg social__svg--insta" role="img" width="26" height="26">
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Наша страница в фэйсбуке">
-                <svg role="img" class="social__svg" width="31" height="31">
-                  <use xlink:href="./img/#icon-fb"></use>
+                <svg role="img" class="social__svg social__svg--fb" width="31" height="31">
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -171,8 +172,8 @@
         <div class="page-footer__created html-academy">
           <a class="html-academy__link" href="https://html-academy.ru" aria-label="Страница Академии"><span class="html-academy__name">HTML
               Academy</span>
-            <svg class="social__svg" role="img" width="42" height="42">
-              <use xlink:href="./img/#icon-htmlacademy"></use>
+            <svg class="social__svg social__svg--academy" role="img" width="42" height="42">
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -180,7 +181,9 @@
     </div>
   </footer>
 
-  <script src="./js/svgxuse.min.js" defer></script>
+  <!-- <script src="./js/svgxuse.min.js" defer></script> -->
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="./js/imap.js" type="text/javascript"></script>
 
 </body>
 
