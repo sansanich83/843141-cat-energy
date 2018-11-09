@@ -23,7 +23,7 @@
         <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="195" height="50" alt="питание для котов Кэт энерджи">
       </picture>
     </a>
-    <button class="page-header__button main-nav__toggle main-nav__toggle--close" type="button"></button>
+    <button class="page-header__button page-header__toggle page-header__toggle--close" type="button"></button>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -34,7 +34,7 @@
             <a class="site-list__a" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__a site-list__item--current  site-list__a--form" href="form.html">Подбор программы</a>
+            <a class="site-list__a site-list__a--form" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -42,6 +42,8 @@
   </header>
 
   <main class="page-main page-main--form">
+
+    <h1 class="visualy-hidden">Форма заказа товаров</h1>
 
     <h2 class="page-main__section-header page-main__section-header--form">Подбор программы</h2>
 
@@ -79,7 +81,7 @@
             кота)</h3>
         </div>
         <div class="cat-contacts__wrapper">
-          <div class="cat-contacts__item cat-contacts__label--mail cat-contacts__item--mail">
+          <div class="cat-contacts__item cat-contacts__item--mail cat-contacts__item--mail">
             <label class="cat-contacts__label form-text" for="email">E-mail:*</label>
             <input class="cat-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
           </div>
@@ -137,7 +139,7 @@
         </span>
       </div>
     </div>
-    <div id="imap" class="page-footer__imap page-footer__imap--index" width="300" height="300"></div>
+    <div id="imap" class="page-footer__imap page-footer__imap--index"></div>
     <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     <div class="page-footer__wrapper">
       <a href="index.html">
@@ -172,7 +174,7 @@
         <div class="page-footer__created html-academy">
           <a class="html-academy__link" href="https://html-academy.ru" aria-label="Страница Академии"><span class="html-academy__name">HTML
               Academy</span>
-            <svg class="social__svg social__svg--academy" role="img" width="42" height="42">
+            <svg class="html-academy__svg html-academy__svg--academy" role="img" width="42" height="42">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>

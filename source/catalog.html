@@ -23,7 +23,7 @@
         <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="195" height="50" alt="питание для котов Кэт энерджи">
       </picture>
     </a>
-    <button class="page-header__button main-nav__toggle main-nav__toggle--close" type="button"></button>
+    <button class="page-header__button page-header__toggle page-header__toggle--close" type="button"></button>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -41,7 +41,9 @@
     </nav>
   </header>
 
-  <main class="page-main page-main--catalog">
+  <main class="page-main page-main-catalog">
+
+    <h1 class="visualy-hidden">Каталог продуктов питания для котов</h1>
 
     <section class="page-main__catalog">
 
@@ -61,21 +63,21 @@
         <h3 class="product-card__header">Cat Energy pro 500 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">500 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">500 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Курица</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Курица</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">700 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">700 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/chicken-big-desktop@1x.webp 1x, ./img/chicken-big-desktop@2x.webp 2x">
@@ -90,21 +92,21 @@
         <h3 class="product-card__header">Cat Energy pro 1000 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">1000 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">1000 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Курица</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Курица</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">1000 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">1000 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/fish-small-desktop@1x.webp 1x, ./img/fish-small-desktop@2x.webp 2x">
@@ -119,21 +121,21 @@
         <h3 class="product-card__header">Cat Energy pro 500 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">500 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">500 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Рыба</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Рыба</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">700 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">700 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/fish-big-desktop@1x.webp 1x, ./img/fish-big-desktop@2x.webp 2x">
@@ -148,21 +150,21 @@
         <h3 class="product-card__header">Cat Energy pro 1000 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">1000 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">1000 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Рыба</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Рыба</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">1000 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">1000 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/buckwheat-small-desktop@1x.webp 1x, ./img/buckwheat-small-desktop@2x.webp 2x">
@@ -177,21 +179,21 @@
         <h3 class="product-card__header">Cat Energy slim 500 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">500 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">500 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Гречка</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Гречка</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">400 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">400 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/buckwheat-big-desktop@1x.webp 1x, ./img/buckwheat-big-desktop@2x.webp 2x">
@@ -206,21 +208,21 @@
         <h3 class="product-card__header">Cat Energy slim 1000 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">1000 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">1000 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Гречка</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Гречка</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">700 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">700 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card">
+      <div class="page-main-catalog__item product-card">
         <div class="product-card__img-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="./img/rice-small-desktop@1x.webp 1x, ./img/rice-small-desktop@2x.webp 2x">
@@ -235,21 +237,21 @@
         <h3 class="product-card__header">Cat Energy slim 500 г</h3>
         <table class="product-card__properties properties-list">
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Объем</td>
-            <td class="properties-list__item--value">500 г</td>
+            <td class="properties-list__item-name">Объем</td>
+            <td class="properties-list__item-value">500 г</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Вкус</td>
-            <td class="properties-list__item--value">Рис</td>
+            <td class="properties-list__item-name">Вкус</td>
+            <td class="properties-list__item-value">Рис</td>
           </tr>
           <tr class="properties-list__item">
-            <td class="properties-list__item--name">Цена</td>
-            <td class="properties-list__item--value">500 Р.</td>
+            <td class="properties-list__item-name">Цена</td>
+            <td class="properties-list__item-value">500 Р.</td>
           </tr>
         </table>
         <button class="page-main__button page-main__button--catalog">Заказать</button>
       </div>
-      <div class="page-catalog__item product-card show-all">
+      <div class="page-main-catalog__item product-card show-all">
         <b class="show-all__title">Показать еще 100500 товаров</b>
         <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
         <a class="page-main__button page-main__button--show-all" href="#">Показать все</a>
@@ -312,7 +314,7 @@
         </span>
       </div>
     </div>
-    <div id="imap" class="page-footer__imap page-footer__imap--index" width="300" height="300"></div>
+    <div id="imap" class="page-footer__imap page-footer__imap--index"></div>
     <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBjfEt2TC" width="300" height="300"></iframe> -->
     <div class="page-footer__wrapper">
       <a href="index.html">
@@ -347,7 +349,7 @@
         <div class="page-footer__created html-academy">
           <a class="html-academy__link" href="https://html-academy.ru" aria-label="Страница Академии"><span class="html-academy__name">HTML
               Academy</span>
-            <svg class="social__svg social__svg--academy" role="img" width="42" height="42">
+            <svg class="html-academy__svg html-academy__svg--academy" role="img" width="42" height="42">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>

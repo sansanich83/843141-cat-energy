@@ -22,6 +22,24 @@
   width: 100%;
 }
 
+.html-academy__svg {
+  fill: @secondary-text-color;
+
+  &:hover {
+    fill: @button-color;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.html-academy__svg--academy {
+  margin-left: auto;
+  margin-right: -8px;
+}
+
 @media (min-width: @tablet-width) {
   .html-academy {
     flex-wrap: nowrap;
