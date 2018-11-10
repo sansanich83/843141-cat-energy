@@ -39,5 +39,5 @@ function init() {
   clusterer.add(myGeoObjects);
   myMap.geoObjects.add(clusterer);
   // Отлючаем возможность изменения масштаба
-  myMap.behaviors.disable('scrollZoom');
+  myMap.behaviors.disable("scrollZoom");
 }
