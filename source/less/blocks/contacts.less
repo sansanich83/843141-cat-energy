@@ -3,6 +3,15 @@
   padding: 20px;
   padding-top: 4px;
   padding-bottom: 26px;
+  text-align: left;
+  padding-top: 29px;
+  width: 320px;
+  .auto-margin;
+  box-sizing: border-box;
+}
+
+.contacts--white {
+  background-color: @main-color;
 }
 
 .contacts__invite {
@@ -29,10 +38,18 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
+    width: 768px;
     min-height: 200px;
-    padding: 6.5% 9.2%;
+    padding-left: 72px;
+    padding-top: 63px;
+    padding-right: 72px;
     box-sizing: border-box;
     background-color: @secondary-color;
+    box-sizing: border-box;
+  }
+
+  .contacts--white {
+    background-color: @main-color;
   }
 
   .contacts__invite {
@@ -53,12 +70,10 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts--catalog {
+  .contacts {
     width: 570px;
     height: 201px;
     background-color: @main-color;
-    margin-left: 3%;
-    margin-top: -12px;
     padding-left: 70px;
     padding-top: 60px;
     padding-right: 50px;
@@ -85,6 +100,6 @@
   }
 
   .page-footer__map {
-    max-width: 1440px;
+    // max-width: 1440px;
   }
 }

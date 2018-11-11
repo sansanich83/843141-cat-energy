@@ -7,11 +7,11 @@
 }
 
 .page-footer--index {
-  background-image: linear-gradient(@main-color 200px, @secondary-color 200px);
+  // background-image: linear-gradient(@main-color 200px, @secondary-color 200px);
 }
 
 .page-footer__wrapper {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .page-footer__social-wrapper {
@@ -19,14 +19,15 @@
 }
 
 .page-footer__map {
-  width: 320px;
-  height: 498px;
+  width: 100%;
+  height: 363px;
   background-image: url("../img/map-pin.png"),
     url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 61px auto, 100% auto;
-  background-position: 50% 57%, 0% 78px;
-  margin: 0 auto;
+  background-size: 61px auto, 320px 363px;
+  background-position: 50% 57%, center;
+  .auto-margin;
+  margin-bottom: 30px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/map-pin.png"),
@@ -37,17 +38,12 @@
 
 .page-footer__imap--index {
   width: 100%;
-  height: 368px;
-  position: absolute;
-  top: 114px;
-  left: 0;
+  height: 363px;
   z-index: 1;
 }
 
-.page-footer__contacts {
-  text-align: left;
+.page-footer__contacts-wrapper--white {
   background-color: @main-color;
-  padding-top: 29px;
 }
 
 .page-footer__logo {
@@ -66,13 +62,13 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__map {
-    width: 768px;
-    height: 600px;
+    width: 100%;
+    height: 396px;
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 123px auto, 100% auto;
-    background-position: 50% 70%, 50% 194px;
+    background-size: 123px auto, 768px 396px;
+    background-position: 50% 70%, center;
     margin: 0 auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -102,20 +98,8 @@
     margin-right: 0;
   }
 
-  .page-footer__contacts {
-    background-color: @secondary-color;
-    margin-top: 76px;
-    padding-top: 63px;
-  }
-
-  .page-footer__contacts--white {
-    background-color: @main-color;
-    margin-top: 0;
-  }
-
-  .page-footer__imap--index {
+  .page-footer__imap {
     height: 396px;
-    top: 198px;
   }
 }
 
@@ -128,7 +112,6 @@
 
   .page-footer__map {
     width: 100%;
-    max-width: 1300px;
     height: 400px;
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-desktop@1x.png");
@@ -136,7 +119,6 @@
     background-size: 122px auto, 1440px auto;
     background-position: 1000px 52%, 50% 50%;
     margin: 0 auto;
-    padding-top: 99px;
     box-sizing: border-box;
     position: relative;
 
@@ -149,17 +131,23 @@
 
   .page-footer__contacts {
     background-color: @main-color;
-    margin-top: -4px;
-    margin-left: 40px;
+    position: absolute;
+    top: 100px;
+    left: -324px;
+  }
+
+  .page-footer__contacts-wrapper {
+    width: 570px;
+    height: 0;
+    max-width: 1300px;
+    box-sizing: border-box;
+    .auto-margin;
+    position: relative;
   }
 
   .page-footer__imap--index {
     width: 100%;
     height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
   }
 
   .page-footer__wrapper {
