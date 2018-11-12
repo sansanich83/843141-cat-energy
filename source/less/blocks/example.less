@@ -64,6 +64,11 @@
   .example__slider {
     position: relative;
     background-image: linear-gradient(to left, @slider-clor 50%, @secondary-color 50%);
+    background-color: @secondary-color;
+    width: 100%;
+    display: flex;
+    margin-top: 264px;
+    flex-wrap: wrap;
   }
 
   .example__img--fat-cat {
@@ -104,14 +109,6 @@
     margin-top: 65px;
   }
 
-  .example__slider {
-    background-color: @secondary-color;
-    width: 100%;
-    display: flex;
-    margin-top: 264px;
-    flex-wrap: wrap;
-  }
-
   .example__cost {
     // float: right;
     padding-right: 4%;
@@ -133,14 +130,14 @@
     display: flex;
 
     &::before {
-      content:"";
+      content: "";
       display: block;
       height: 464px;
       flex-grow: 1;
     }
 
     &::after {
-      content:"";
+      content: "";
       display: block;
       height: 464px;
       flex-grow: 1;

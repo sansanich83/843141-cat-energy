@@ -85,24 +85,56 @@
   margin-bottom: 24px;
 }
 
-.page-main__header-line {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  border-bottom: 1px solid @border-color;
-  padding-top: 8px;
-  padding-bottom: 34px;
-  margin-bottom: 12px;
-  overflow: hidden;
+.page-main__header {
+  .font(24px;24px;400;none);
+  margin-top: 28px;
+  margin-bottom: 32px;
+  background: white;
+  width: 227px;
+  padding-right: 20px;
+  padding-left: 20px;
 
-  &::after {
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   flex-grow: 1;
+  //   height: 2px;
+  //   background-color: @button-color;
+  // }
 
-  }
+  // &::before {
+  //   margin-right: 10px;
+  //   max-width: calc(50vw - 200px);
+  // }
+
+  // &:after {
+  //   margin-left: 10px;
+  // }
 }
 
+.page-main__header--cat-contacts {
+  width: 181px;
+}
 
-.page-main__header-line--short {
-  border-bottom: none;
+.page-main__header--comments {
+  width: 123px;
+}
+
+.page-main__header--add {
+  width: 145px;
+}
+
+.page-main__header-line {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: @button-color;
+  top: -42px;
+  z-index: -1;
+}
+
+.page-main__header-line--cat-contacts {
+  top: -66px;
 }
 
 .page-main__live-example {
@@ -182,61 +214,48 @@
     font-size: 16px;
   }
 
-  .page-main__header-line {
+  .page-main__header {
     .font(36px;36px;400;none);
     border-top: none;
     border-bottom: none;
     padding-top: 38px;
     padding-bottom: 68px;
-    padding-right: 20px;
-    padding-left: 20px;
-
-    &::after {
-      height: 3px;
-      content: "";
-      margin-top: 22px;
-      margin-left: 40px;
-      margin-right: -30px;
-      flex-grow: 20;
-    }
-
-    &::before {
-      min-width: 10px;
-      height: 3px;
-      content: "";
-      background-color: @button-color;
-      float: left;
-      margin-top: 22px;
-      flex-grow: 1;
-      margin-left: -33px;
-      margin-right: 40px;
-    }
+    padding-right: 4px;
+    padding-left: 38px;
+    margin-top: 34px;
+    margin-bottom: 6px;
+    margin-left: 30px;
+    width: 368px;
   }
 
-  .page-main__header-line--short {
-    padding-left: 43px;
-    padding-bottom: 76px;
-
-    &::after {
-      margin-right: -17px;
-    }
+  .page-main__header--cat-contacts {
+    width: 550px;
+    margin-top: 36px;
   }
 
-  .page-main__header-line--comment {
-    margin-left: 0;
+  .page-main__header--comments {
+    width: 217px;
+  }
 
-    &::before {
-      margin-left: -41px;
-      margin-right: 35px;
-    }
+  .page-main__header--add {
+    width: 249px;
+    margin-top: 36px;
+  }
 
-    &::after {
-      margin-right: -18px;
-    }
+  .page-main__header-line {
+    top: -92px;
+  }
+
+  .page-main__header-line--cat-contacts {
+    top: -86px;
+  }
+
+  .page-main__header-line--comments {
+    top: -88px;
   }
 
   .page-main__header-line--add {
-    padding-left: 31px;
+    top: -88px;
   }
 }
 
@@ -274,27 +293,58 @@
     margin-top: 62px;
   }
 
-  .page-main__header-line {
+  .page-main__header {
     .font(36px;36px;400;none);
     border-top: none;
     border-bottom: none;
     padding-top: 28px;
     padding-bottom: 19px;
-    margin-left: -6px;
-    margin-bottom: 54px;
-    margin-top: 10px;
-
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      margin-right: -17px;
-    }
+    margin-left: 0;
+    margin-bottom: 58px;
+    margin-top: 12px;
   }
 
-  .page-main__header-line--long::after {
-    margin-right: -391px;
+  .page-main__header--cat-contacts {
+    width: 550px;
+    margin-bottom: 52px;
+  }
+
+  .page-main__header--comments {
+    width: 217px;
+    margin-bottom: 52px;
+  }
+
+  .page-main__header--add {
+    width: 249px;
+    margin-bottom: 52px;
+  }
+
+  .page-main__header-line {
+    position: absolute;
+    right: -434px;
+    top: 62px;
+    width: 1440px;
+  }
+
+  .page-main__header-line--cat-contacts {
+    top: -84px;
+    left: -70px;
+    width: 1440px;
+    position: relative;
+  }
+
+  .page-main__header-line--comments {
+    top: -88px;
+    left: -70px;
+    width: 1440px;
+    position: relative;
+  }
+
+  .page-main__header-line--add {
+    top: -84px;
+    left: -70px;
+    width: 1440px;
+    position: relative;
   }
 
   .page-main__section-header--form {
@@ -314,9 +364,5 @@
 
   .page-main__button--show-all {
     width: 170px;
-  }
-
-  .page-main__header-line--add {
-    padding-left: 44px;
   }
 }
