@@ -84,13 +84,15 @@
   }
 }
 
+
+
 @media (min-width: @desktop-width) {
   .welcoming {
     background-image: url("../img/index-background-desktop@1x.jpg"),
-      linear-gradient(225deg, @button-color 75%, white);
+      linear-gradient(225deg, #65a93c 100%, white);
     background-repeat: no-repeat;
-    background-position: left 50vw top 8px, top 0 right 0;
-    background-size: 720px auto, 47vw 704px;
+    background-position: right 0 top 8px, left 50vw top 0;
+    background-size: 50% auto, 50vw 638px;
     margin-top: -171px;
     padding-left: 0;
     margin-bottom: 20px;
@@ -99,8 +101,8 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg"),
-        linear-gradient(225deg, @button-color 75%, white);
-      background-size: 720px auto, 47vw 704px;
+        linear-gradient(225deg, #65a93c 100%, white);
+      background-size: 720px auto, 50vw 704px;
     }
   }
 
@@ -125,5 +127,15 @@
     .font(60px;60px;400;none);
     color: black;
     padding-top: 234px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .welcoming {
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(225deg, #65a93c 100%, white);
+    background-repeat: no-repeat;
+    background-position: right 0 top 8px, left 50vw top 0;
+    background-size: 720px auto, 50vw 704px;
   }
 }
