@@ -26,17 +26,17 @@
   flex-grow: 1;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: @dark-secondary;
   }
 
-  &:active {
+  &:focus {
     border-color: @secondary-text-color;
   }
-  // &:invalid {
-  //   border-color: @error-color;
-  // }
+
+  &:invalid {
+    border-color: @error-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
